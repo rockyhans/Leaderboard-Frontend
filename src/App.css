@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainPage {
+  width: 100%;
+  height: 100vh;
+  background-color: #a855f7;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.HomePage {
+  height: 100vh;
+  width: 50%;
+  background-color: snow;
+  overflow: auto;
+  overflow-y: auto;
+}
+
+.HomePage {
+  overflow: auto;
+  /* scrollbar-width: none; */
+  -ms-overflow-style: none;
+}
+
+.HomePage::-webkit-scrollbar {
+  display: none;
+}
+
+.div1 {
+  padding: 10px;
+}
+
+.buttons {
+  margin-top: 10px;
+  padding: 7px;
+  border-radius: 30px;
+  gap: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 16px;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.15);
+}
+
+.btn-default {
+  padding: 0.7rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  background-color: snow;
+  color: black;
+  transition: background-color 0.2s ease;
+  border: none;
+}
+
+.btn-active {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  background-color: black;
+  color: snow;
+  border: none;
+}
+
+.kingLeader {
+  height: 400px;
+  background-image: url("./assets/kingPhoto.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  padding: 50px;
+  text-align: center;
+}
+
+.kingLeader button {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  background-color: orangered;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.kingLeader button:hover {
+  background-color: orange;
+}
+
+.kingLeader h1 {
+  color: blue;
+  font-size: 3rem;
+}
+
+.leaderBordFisrt3 {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.leaderBordFisrt3 div {
+  padding: 10px;
+}
+
+.card {
+  width: 500px;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  margin: 20px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.card-content {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  background-color: #6c5ce7;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #5a4dd2;
+}
+
+.card img {
+  border-radius: 50%;
+  border: 2px solid snow;
+}
+
+.restLeaderBoard {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
+.restLeaderBoard table {
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.restLeaderBoard table td {
+  font-weight: 600;
+  border-top: 2px solid black;
+  padding: 7px;
+}
+
+.restLeaderBoard button {
+  background: none;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 7px;
+  background-color: #6c5ce7;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.restLeaderBoard button:hover {
+  background-color: #5a4dd2;
+}
+
+.adminLederboard {
+  padding: 10px;
+}
+
+.addUser,
+.userSelect {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.input {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 7px;
+}
+
+.buttonX {
+  padding: 0px 15px 0px 15px;
+  padding: 10px;
+  background: none;
+  border: none;
+  border: 1px solid blue;
+  border-radius: 7px;
+  transition: background-color 0.5s ease;
+}
+
+.buttonX:hover {
+  background-color: blue;
+  color: snow;
+}
+
+.pageForDiv {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+table th {
+  background-color: blue;
+  color: snow;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .HomePage {
+    width: 100%;
+  }
+  .restLeaderBoard {
+    padding: 0px;
+  }
+
+  .restLeaderBoard table {
+    padding: 0px;
+  }
+  .restLeaderBoard table td {
+    padding: 0px;
+  }
+}
