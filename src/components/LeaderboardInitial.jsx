@@ -112,7 +112,7 @@ const LeaderboardInitial = () => {
 
   const fetchLeaderboard = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/leaderboard");
+      const res = await axios.get("https://leaderboard-backend-ytsu.onrender.com/api/leaderboard");
       const sorted = res.data.sort((a, b) => b.points - a.points);
       setLeaders(sorted);
     } catch (error) {
@@ -126,7 +126,7 @@ const LeaderboardInitial = () => {
 
   const addPoints = async (name) => {
     try {
-      await axios.post("http://localhost:5000/api/leaderboard/add-points", {
+      await axios.post("https://leaderboard-backend-ytsu.onrender.com/api/leaderboard/add-points", {
         name,
         points: 1,
       });
